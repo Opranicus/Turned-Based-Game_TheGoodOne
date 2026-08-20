@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Game</title>
+</head>
+<body>
+    
+    <h1>Turn Based Game</h1>
+    <div class="container">
+        <div class="stage">
+            <div class="player">
+                <h2>YOU</h2>
+                <div class="img">
+                    <img src="./images/ogre_magi.png" id="Pimg">
+                </div>
+                <h2>Health: <label id="health">100</label></h2>
+            </div>
+
+            <div class="enemy">
+                <h2 id="enemy">ENEMY: Pugna</h2>
+                <div id="imgE">
+                    <img src="./images/pugna.png" id="Eimg">
+                </div>
+                <h2>Health: <label id="ehealth">100</label></h2>
+                <audio src="./audio/Metal Crash - Sound Effect for editing.mp3" id="collision"></audio>
+            </div>
+
+        </div>
+
+        <div class="displayatk">
+            <label id= "display"></label>
+        </div>
+
+        <div class="buttons">
+            <div class="buttonsrow1">
+                <button id="atk1">Fireblast</button>
+                <button id="atk2">Ignite</button>
+            </div>
+
+            <div class="buttonsrow2">
+                <button id="atk3">BloodLust</button>
+                <button id="atk4">MultiCast</button> 
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
